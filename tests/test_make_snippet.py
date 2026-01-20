@@ -21,3 +21,10 @@ the method returns the elipses at the end if more than five words are in a strin
 def test_make_snippet_returns_elipse_at_end():
     result = make_snippet("this method return a string even if longer than five letters")
     assert result == "this method returns a string..."
+
+"""
+if a string is less than five words, the entire string is returned
+"""
+def test_make_snippet_string_less_than_five_words():
+    result = make_snippet("this still works fine")
+    assert result == "this still works fine"
