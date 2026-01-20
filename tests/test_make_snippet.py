@@ -14,3 +14,10 @@ the method only returns the first 5 words of a string argument
 def test_make_snippet_returns_five_words_only():
     result = make_snippet("this method return a string even if longer than five letters")
     assert result == "this method returns a string"
+
+"""
+the method returns the elipses at the end if more than five words are in a string
+"""
+def test_make_snippet_returns_elipse_at_end():
+    result = make_snippet("this method return a string even if longer than five letters")
+    assert result == "this method returns a string..."
